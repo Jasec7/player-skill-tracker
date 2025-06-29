@@ -5,7 +5,7 @@ function Home(){
         <div>
             <h1>Welcome to Player Skill Tracker</h1>
             <hr/>
-            <p>Search players and track their performance with detailed scoiting notes</p>
+            <p>Search players and track their performance with detailed scouting notes</p>
         </div>
     )
 };
