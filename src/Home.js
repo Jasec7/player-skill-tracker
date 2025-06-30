@@ -1,12 +1,19 @@
 import React from "react";
+import NavBar from "./NavBar";
 
 function Home(){
     return(
+        <>
+         <header>
+                <NavBar />
+            </header>
+        
         <div>
             <h1>Welcome to Player Skill Tracker</h1>
             <hr/>
             <p>Search players and track their performance with detailed scouting notes</p>
         </div>
+        </>
     )
 };
 

@@ -10,6 +10,8 @@ function NavBar(){
         >
             Home
         </NavLink>
+
+        
         <NavLink
         to="/players"
         className="nav-link"

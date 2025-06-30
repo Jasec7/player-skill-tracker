@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import PlayerList from "./PlayerList"
+import NavBar from "./NavBar";
 
 function PlayerPage(){
  const [players, setPlayers] = useState([]);
@@ -16,7 +17,8 @@ function PlayerPage(){
   };
   return (
     <div className="App">
-      <header className="App-header">
+      <header>
+        <NavBar />
       </header>
       <PlayerList players={players} />
       </div>
