@@ -1,15 +1,16 @@
 import App from "./App";
 import Home from "./Home";
+import PlayerPage from "./PlayerPage";
 
 const routes = [
     {
         path:'/',
-        element:<App />
+        element:<Home/>
 
     },
     {
-        path:'/home',
-        element:<Home />
+        path:'/players',
+        element:<PlayerPage />
     },
 ];
 
