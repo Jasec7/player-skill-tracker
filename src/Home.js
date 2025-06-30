@@ -4,10 +4,6 @@ import NavBar from "./NavBar";
 function Home(){
     return(
         <>
-         <header>
-                <NavBar />
-            </header>
-        
         <div>
             <h1>Welcome to Player Skill Tracker</h1>
             <hr/>

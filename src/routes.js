@@ -5,13 +5,19 @@ import PlayerPage from "./PlayerPage";
 const routes = [
     {
         path:'/',
-        element:<Home/>
+        element:<App />,
+        children:[
 
-    },
-    {
-        path:'/players',
-        element:<PlayerPage />
-    },
+            {
+                path:'/',
+                element:<Home/>
+            },
+            {
+                 path:'/players',
+                 element:<PlayerPage />
+            },
+        ]
+    }
 ];
 
 export default routes;

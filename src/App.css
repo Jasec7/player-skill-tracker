@@ -46,6 +46,8 @@
 
 .nav-link.active {
   font-weight: bold;
-  color: #007bff; /* Blue or whatever highlight you like */
+  color: #007bff; 
   text-decoration: underline;
 }
+
+

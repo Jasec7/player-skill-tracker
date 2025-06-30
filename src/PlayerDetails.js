@@ -5,8 +5,8 @@ function PlayerDetails({id, name, team, position, image}){
         <div className="details">
             <img src={image}/>
             <h2>{name}</h2>
-            <p>Team:{team}</p>
-            <p>Position:{position}</p>
+            <p>Team: {team}</p>
+            <p>Position: {position}</p>
             <p>View Performance Notes:</p>
 
 

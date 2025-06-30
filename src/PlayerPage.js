@@ -17,9 +17,6 @@ function PlayerPage(){
   };
   return (
     <div className="App">
-      <header>
-        <NavBar />
-      </header>
       <PlayerList players={players} />
       </div>
 
