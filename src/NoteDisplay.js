@@ -6,7 +6,6 @@ function NoteDisplay({playerId, scout, comment}){
             <p>Scout: {scout}</p>
             <p>Comment: {comment}</p>
         </div>
-
     )
 }
 

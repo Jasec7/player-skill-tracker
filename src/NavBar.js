@@ -18,13 +18,6 @@ function NavBar(){
             Players
         </NavLink>
 
-        <NavLink
-        to="/notes"
-        className="nav-link"
-        >
-            Notes
-        </NavLink>
-
        </nav>
     )
 
