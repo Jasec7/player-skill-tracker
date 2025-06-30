@@ -9,13 +9,11 @@ function PlayerList({players}){
                 id={player.id} 
                 name={player.name} 
                 team={player.team} 
-                position={player.position}/> 
+                position={player.position}
+                image={player.image}/> 
             ))}
-
-
         </div>
     );
-
 }
 
 export default PlayerList
