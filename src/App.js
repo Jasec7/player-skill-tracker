@@ -2,10 +2,7 @@
 import { Outlet } from 'react-router-dom';
 import './App.css';
 import React from "react";
-import PlayerPage from "./PlayerPage";
 import NavBar from './NavBar';
-
-
 
 function App() {
  return(

@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import PlayerList from "./PlayerList"
-import NavBar from "./NavBar";
+
 
 function PlayerPage(){
  const [players, setPlayers] = useState([]);

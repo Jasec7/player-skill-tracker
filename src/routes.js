@@ -16,6 +16,10 @@ const routes = [
                  path:'/players',
                  element:<PlayerPage />
             },
+            {
+                path:'/players/:id/notes',
+                element: <NotePage />
+            }
         ]
     }
 ];
