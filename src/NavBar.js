@@ -11,13 +11,20 @@ function NavBar(){
             Home
         </NavLink>
 
-        
         <NavLink
         to="/players"
         className="nav-link"
         >
             Players
         </NavLink>
+
+        <NavLink
+        to="/notes"
+        className="nav-link"
+        >
+            Notes
+        </NavLink>
+
        </nav>
     )
 
