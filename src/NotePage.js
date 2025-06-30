@@ -13,7 +13,7 @@ function NotePage(){
     .then(notes => setNotes(notes))
  },[playerId])
 
- const playerNotes = notes.filter(note => note.id === params.id)
+ const playerNotes = notes.filter(note => note.playerId === parseInt(playerId.id))
 
     return(
         <div>

@@ -1,6 +1,7 @@
 import App from "./App";
 import Home from "./Home";
 import PlayerPage from "./PlayerPage";
+import NotePage from "./NotePage";
 
 const routes = [
     {
