@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import NoteList from "./NoteList";
 import { useParams } from "react-router-dom";
+import NoteForm from "./NoteForm";
 
 function NotePage(){
  const [notes, setNotes] = useState([]);
@@ -13,10 +14,15 @@ function NotePage(){
     .then(notes => setNotes(notes))
  },[playerId])
 
+ function handleAddNote(newNote){
+   setNotes([...notes, newNote])
+ }
+
  const playerNotes = notes.filter(note => note.playerId === parseInt(playerId.id))
 
     return(
         <div>
+          <NoteForm onAddNote={handleAddNote} />
           <NoteList notes={playerNotes} />
          </div>
     )
