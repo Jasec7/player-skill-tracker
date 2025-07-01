@@ -7,7 +7,7 @@ function PlayerDetails({id, name, team, position, image}){
             <h2>{name}</h2>
             <p>Team: {team}</p>
             <p>Position: {position}</p>
-            <Link to={`/players/${id}/notes`}>View Performance Notes:</Link>
+            <Link to={`/players/${id}/notes`}>View Performance Notes</Link>
         </div>
 
     )

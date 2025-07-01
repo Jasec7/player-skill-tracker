@@ -16,13 +16,23 @@ function NotePage(){
 
  function handleAddNote(newNote){
    setNotes([...notes, newNote])
- }
+ };
 
- const playerNotes = notes.filter(note => note.playerId === parseInt(playerId))
+ const playerNotes = notes.filter(note => note.playerId === parseInt(playerId));
+
+ const handleDelete = (id) => {
+   fetch(`http://localhost:3001/notes/${id}`,{
+      method:"DELETE"
+   })
+   .then(() => {
+      const deleteNote = notes.filter((note) => note.playerId !== id);
+      setNotes(deleteNote)
+   })
+ }
 
     return(
         <div>
-          <NoteForm onAddNote={handleAddNote} playerId={playerId} />
+          <NoteForm onAddNote={handleAddNote} playerId={playerId} onDelete={handleDelete}/>
           <NoteList notes={playerNotes} />
          </div>
     )
