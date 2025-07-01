@@ -25,15 +25,15 @@ function NotePage(){
       method:"DELETE"
    })
    .then(() => {
-      const deleteNote = notes.filter((note) => note.playerId !== id);
+      const deleteNote = notes.filter((note) => note.id !== id);
       setNotes(deleteNote)
    })
  }
 
     return(
         <div>
-          <NoteForm onAddNote={handleAddNote} playerId={playerId} onDelete={handleDelete}/>
-          <NoteList notes={playerNotes} />
+          <NoteForm onAddNote={handleAddNote} playerId={playerId}/>
+          <NoteList notes={playerNotes} onDelete={handleDelete}/>
          </div>
     )
 }
