@@ -18,11 +18,11 @@ function NotePage(){
    setNotes([...notes, newNote])
  }
 
- const playerNotes = notes.filter(note => note.playerId === parseInt(playerId.id))
+ const playerNotes = notes.filter(note => note.playerId === parseInt(playerId))
 
     return(
         <div>
-          <NoteForm onAddNote={handleAddNote} />
+          <NoteForm onAddNote={handleAddNote} playerId={playerId} />
           <NoteList notes={playerNotes} />
          </div>
     )

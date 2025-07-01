@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-function NoteForm(){
+function NoteForm({onAddNote, playerId}){
     const [formData, setFormData] = useState({
         scout:"",
         comment:""
@@ -12,12 +12,12 @@ function NoteForm(){
         fetch("http://localhost:3001/notes",{
                 method:"POST",
                 headers:{
-                    "Content-Type":"Application/JSON"
+                    "Content-Type":"application/json"
                 },
-                body:JSON.stringify(formData)
+                body:JSON.stringify({ ...formData, playerId: parseInt(playerId) })
             })
             .then(r => r.json())
-            .then((newNote) => {console.log(newNote);
+            .then((newNote) => {onAddNote(newNote);
                 setFormData({scout:"", comment:""})
             })
         }
@@ -27,13 +27,14 @@ function NoteForm(){
             <h2>Feedback</h2>
             <form onSubmit={handleSubmit}>
                 <input type='text' name='scout' placeholder='scout'
-                value=""/>
+                value={formData.scout}
+                onChange={(e) => setFormData({...formData, scout: e.target.value})}/>
                 <input type='text' name='comment' placeholder='comment'
-                value=""/>
+                value={formData.comment}
+                onChange={(e) => setFormData({...formData, comment: e.target.value})}/>
                 <button type='submit'>Add Coment</button> 
             </form>
         </div>
-
     )
 }
 
