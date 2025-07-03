@@ -61,4 +61,20 @@ body {
 
 }
 
+.logo {
+  animation: spinBounce 1s linear infinite;
+  width: 150px;
+  margin-bottom: 20px;
+}
 
+@keyframes spinBounce {
+  0% {
+    transform: rotate(0deg) translateY(0);
+  }
+  50% {
+    transform: rotate(180deg) translateY(-20px);
+  }
+  100% {
+    transform: rotate(360deg) translateY(0);
+  }
+}
