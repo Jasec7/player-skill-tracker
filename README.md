@@ -42,21 +42,23 @@ The app includes:
 
 ### Backend Setup
 1. Clone the backend repo:
-
+```
 git clone git@github.com:Jasec7/player-skill-tracker-backend.git
 cd player-skill-tracker-backend
 npm install
 npm run server
-
+```
+---
 
 ### Frontend Setup
 1. Clone the frontend repo:
-
+```
 git clone git@github.com:Jasec7/player-skill-tracker.git
 cd player-skill-tracker
-
+```
 2. Install dependencies and start React:
+```
 npm install
 npm start
-
+```
 Runs app at `http://localhost:3000`.
