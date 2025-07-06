@@ -20,4 +20,3 @@ function Home(){
 
 export default Home
 
-//https://static.vecteezy.com/system/resources/previews/025/257/277/original/soccer-ball-cartoon-png.png
