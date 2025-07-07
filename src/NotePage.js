@@ -21,7 +21,7 @@ function NotePage(){
  const playerNotes = notes.filter(note => note.playerId === parseInt(playerId));
 
  const handleDelete = (id) => {
-   fetch(`http://localhost:3001/notes/${id}`,{
+   fetch(`${process.env.REACT_APP_API_URL}/notes/${id}`,{
       method:"DELETE"
    })
    .then(() => {
