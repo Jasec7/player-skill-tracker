@@ -1,6 +1,8 @@
 # ⚽ Player Skill Tracker
+🌐 Live App: https://player-skill-tracker.netlify.app
+🌐 Live API: https://player-skill-tracker-backend.onrender.com
 
-A React single-page application that allows users to browse a list of soccer players, view their details, and track performance notes through scouting feedback. Built for Flatiron School Phase 2.
+A React single-page application that allows users to browse a list of soccer players, view their details, and track performance notes through scouting feedback.
 
 ---
 
