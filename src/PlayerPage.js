@@ -5,16 +5,14 @@ import PlayerList from "./PlayerList"
 function PlayerPage(){
  const [players, setPlayers] = useState([]);
 
+ // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
-    console.log("fetched:", players)
-    fetch("http://localhost:3001/players")
+    fetch("https://player-skill-tracker-backend.onrender.com/players")
     .then(r => r.json())
     .then(players => setPlayers(players))
   },[])
 
-  if(!players){
-    return <h1>Loading...</h1>
-  };
+ 
   return (
     <div className="App">
       <PlayerList players={players} />
