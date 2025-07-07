@@ -9,7 +9,7 @@ function NotePage(){
  const playerId = params.id;
 
  useEffect(() => {
-    fetch("http://localhost:3001/notes")
+    fetch(`${process.env.REACT_APP_API_URL}/notes`)
     .then(r => r.json())
     .then(notes => setNotes(notes))
  },[playerId])

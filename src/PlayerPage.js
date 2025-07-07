@@ -7,7 +7,7 @@ function PlayerPage(){
 
  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
-    fetch("https://player-skill-tracker-backend.onrender.com/players")
+    fetch(`${process.env.REACT_APP_API_URL}/players`)
     .then(r => r.json())
     .then(players => setPlayers(players))
   },[])
