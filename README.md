@@ -64,3 +64,9 @@ npm install
 npm start
 ```
 Runs app at `http://localhost:3000`.
+
+## 📄 License
+This project is licensed under the MIT License.
+
+## 👥 Contributors
+- [Jasec7](https://github.com/Jasec7)
