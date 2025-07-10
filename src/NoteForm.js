@@ -9,7 +9,7 @@ function NoteForm({onAddNote, playerId}){
     function handleSubmit(e){
         e.preventDefault();
 
-        fetch(`${process.env.REACT_APP_API_URL}/notes`,{
+        fetch("http://localhost:3001/notes",{
                 method:"POST",
                 headers:{
                     "Content-Type":"application/json"

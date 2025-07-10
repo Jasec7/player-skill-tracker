@@ -9,7 +9,7 @@ function NotePage(){
  const playerId = params.id;
 
  useEffect(() => {
-    fetch(`${process.env.REACT_APP_API_URL}/notes`)
+    fetch("http://localhost:3001/notes")
     .then(r => r.json())
     .then(notes => setNotes(notes))
  },[playerId])
@@ -21,7 +21,7 @@ function NotePage(){
  const playerNotes = notes.filter(note => note.playerId === parseInt(playerId));
 
  const handleDelete = (id) => {
-   fetch(`${process.env.REACT_APP_API_URL}/notes/${id}`,{
+   fetch(`http://localhost:3001/notes/${id}`,{
       method:"DELETE"
    })
    .then(() => {

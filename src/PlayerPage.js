@@ -7,7 +7,7 @@ function PlayerPage(){
 
  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
-    fetch(`${process.env.REACT_APP_API_URL}/players`)
+    fetch("http://localhost:3001/players")
     .then(r => r.json())
     .then(players => setPlayers(players))
   },[])
